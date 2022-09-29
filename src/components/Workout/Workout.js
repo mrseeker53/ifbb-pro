@@ -13,7 +13,7 @@ const Workout = (props) => {
                 <p><small>{description}</small></p>
                 <p>Time: {time}s</p>
             </div>
-            <button onClick={() => handleAddToBuild(time)} className='btn-build'>Add to build</button>
+            <button onClick={() => handleAddToBuild(workout)} className='btn-build'>Add to build</button>
         </div>
 
     );

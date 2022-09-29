@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Time from '../Time/Time';
 import Workout from '../Workout/Workout';
 import './Activity.css'
 
@@ -13,8 +14,9 @@ const Activity = () => {
     }, []);
 
     const handleAddToBuild = (workout) => {
-        console.log(workout)
-        const newTime = [...time, workout];
+        const newTime = workout.time;
+        console.log(newTime)
+
         setTime(newTime);
     }
 
@@ -31,9 +33,7 @@ const Activity = () => {
             </div>
 
             <div className="time-container">
-                <h4>Workout Details</h4>
-                <p>Workout Time: {time.time}</p>
-                <p>Rest: </p>
+                <Time></Time>
             </div>
         </div>
     );
