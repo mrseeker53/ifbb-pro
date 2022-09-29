@@ -1,0 +1,42 @@
+.header {
+    height: 80px;
+    background-color: #1c2b35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.header h1 {
+    color: #dda53d;
+    margin-left: 20px;
+    margin-bottom: auto;
+    font-size: 28px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 36px;
+}
+
+.header a:hover {
+    color: orange;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and(max-width: 576px) {
+    .header {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 16px;
+    }
+}
