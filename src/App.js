@@ -1,5 +1,6 @@
 import './App.css';
 import Activity from './components/Activity/Activity';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header'
 import Questions from './components/Questions/Questions';
 
@@ -9,6 +10,7 @@ function App() {
       <Header></Header>
       <Activity></Activity>
       <Questions></Questions>
+      <Footer></Footer>
     </div>
   );
 }
