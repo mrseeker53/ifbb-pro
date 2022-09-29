@@ -1,0 +1,50 @@
+.workout {
+    width: 300px;
+    height: 470px;
+    border: 1px solid #95A0A7;
+    border-radius: 10px;
+    position: relative;
+}
+
+.workout img {
+    width: 286px;
+    height: 286px;
+    border-radius: 8px;
+    margin: 7px;
+}
+
+.workout-detail {
+    margin: 0 14px;
+}
+
+.workout-detail p {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.workout-name {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    margin-top: 7px;
+}
+
+.btn-build {
+    width: 100%;
+    background-color: #eec07a;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-build:hover {
+    background-color: #f09f0a;
+}
