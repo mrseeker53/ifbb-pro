@@ -14,9 +14,7 @@ const Activity = () => {
     }, []);
 
     const handleAddToBuild = (workout) => {
-        const newTime = workout.time;
-        console.log(newTime)
-
+        const newTime = [...time, workout];
         setTime(newTime);
     }
 
@@ -33,7 +31,7 @@ const Activity = () => {
             </div>
 
             <div className="time-container">
-                <Time></Time>
+                <Time time={time}></Time>
             </div>
         </div>
     );

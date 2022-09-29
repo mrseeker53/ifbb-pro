@@ -1,7 +1,14 @@
 import React from 'react';
 import './Time.css'
 
-const Time = () => {
+const Time = ({ time }) => {
+    console.log(time)
+
+    let workoutTime = 0;
+    for (const workout of time) {
+        workoutTime = workoutTime + workout.time;
+    }
+
     return (
         <div className='time-calculate'>
             <div className='info'>
@@ -17,7 +24,7 @@ const Time = () => {
             </div>
             <div className='workout-details'>
                 <h4>Workout Details</h4>
-                <p>Workout Time:  { }</p>
+                <p>Workout Time: {workoutTime}s</p>
                 <p>Rest Time: </p>
             </div>
             <button className='btn-workout'>Workout Completed</button>
