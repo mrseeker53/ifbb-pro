@@ -1,0 +1,17 @@
+.activity-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.workouts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 100px 50px;
+}
+
+@media screen and (max-width:576px) {
+    .workouts-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
