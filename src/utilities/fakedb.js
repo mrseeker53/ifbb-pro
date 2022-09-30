@@ -8,4 +8,5 @@ const displayToUi = () => {
     return previousRest;
 }
 
+// export function to call function from other component
 export { addToDb, displayToUi }

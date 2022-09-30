@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { addToDb, displayToUi } from '../../utilities/fakedb';
 import './Time.css'
 
@@ -22,6 +24,10 @@ const Time = ({ time }) => {
         addToDb(rest);
     }
 
+    // toast
+    const message = () => {
+        toast("Victory!!! One step closer to build you.")
+    };
 
     return (
         <div className='time-calculate'>
@@ -41,7 +47,8 @@ const Time = ({ time }) => {
                 <p>Workout Time: {workoutTime} seconds</p>
                 <p>Rest Time: {rest} seconds</p>
             </div>
-            <button className='btn-workout'>Workout Completed</button>
+            <button onClick={message} className='btn-workout'>Workout Completed</button>
+            <ToastContainer />
         </div >
     );
 };
