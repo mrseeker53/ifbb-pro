@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { addToDb } from '../../utilities/fakedb';
+import React, { useEffect, useState } from 'react';
+import { addToDb, displayToUi } from '../../utilities/fakedb';
 import './Time.css'
 
 const Time = ({ time }) => {
@@ -10,6 +10,12 @@ const Time = ({ time }) => {
     for (const workout of time) {
         workoutTime = workoutTime + workout.time;
     }
+
+    // load data from local storage
+    useEffect(() => {
+        const previousRest = displayToUi();
+        setRest(previousRest);
+    }, [])
 
     const handleRestTime = (rest) => {
         setRest(rest);
