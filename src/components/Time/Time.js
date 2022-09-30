@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { addToDb } from '../../utilities/fakedb';
 import './Time.css'
 
 const Time = ({ time }) => {
-const [rest, setRest]= useState(0)
+    const [rest, setRest] = useState(0)
 
     // workout time
     let workoutTime = 0;
@@ -11,7 +12,8 @@ const [rest, setRest]= useState(0)
     }
 
     const handleRestTime = (rest) => {
-        setRest(rest)
+        setRest(rest);
+        addToDb(rest);
     }
 
 

@@ -1,0 +1,44 @@
+[
+    {
+        "id": "633599f497df345ecb30dee6",
+        "picture": "./images/arnold-press.jpg",
+        "time": 45,
+        "name": "Arnold Press",
+        "description": "Esse reprehenderit incididunt velit pariatur anim deserunt amet."
+    },
+    {
+        "id": "633599f402bc380e40f6a0c2",
+        "picture": "./images/biceps-curl.png",
+        "time": 45,
+        "name": "Biceps Curl",
+        "description": "Exercitation id nulla irure aliquip in exercitation id in culpa."
+    },
+    {
+        "id": "633599f4f40882538540a29c",
+        "picture": "./images/barbell-curl.png",
+        "time": 45,
+        "name": "Barbell Curl",
+        "description": "Labore cupidatat sit Lorem consectetur aute ut esse."
+    },
+    {
+        "id": "633599f439d7389f2b64ab12",
+        "picture": "./images/concentration-curl.png",
+        "time": 45,
+        "name": "Concentration Curl",
+        "description": "Proident consectetur velit excepteur dolor Lorem."
+    },
+    {
+        "id": "633599f4bd33d71d2acc2b7f",
+        "picture": "./images/hammer-curl.png",
+        "time": 45,
+        "name": "Hammer Curl",
+        "description": "Elit aute anim ipsum amet ipsum."
+    },
+    {
+        "id": "633599f4617e49b7b3d61fe5",
+        "picture": "./images/side-lateral.png",
+        "time": 45,
+        "name": "Side Lateral",
+        "description": "Sit occaecat veniam quis pariatur dolore velit dolor consectetur nisi."
+    }
+]
